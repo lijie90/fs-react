@@ -6,6 +6,7 @@ const instance = axios.create({
   baseURL: import.meta.env.VITE_BASE_URL,
   timeout: 1000
 })
+//响应拦截器
 instance.interceptors.response.use(
   (response) => {
     return response.data
@@ -14,6 +15,7 @@ instance.interceptors.response.use(
     message.error(error.message)
   }
 )
+//请求拦截器
 instance.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token')
