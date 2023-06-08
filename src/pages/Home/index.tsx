@@ -1,3 +1,4 @@
+import { Button } from 'antd'
 import { useMemo, useState } from 'react'
 
 export default function Home() {
@@ -75,7 +76,7 @@ export default function Home() {
   }
   return (
     <div>
-      <table>
+      {/* <table>
         <thead>
           <tr>
             {tableHead.map((item) => {
@@ -107,7 +108,8 @@ export default function Home() {
             return <tr key={index}>{item}</tr>
           })}
         </tbody>
-      </table>
+      </table> */}
+      {/* <Button></Button> */}
     </div>
   )
 }
